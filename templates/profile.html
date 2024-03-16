@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TreeAssistant</title>
+  <link href="/static/profile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <button onclick="redirectDashboard()">Back to Dashboard</button>
+  <h1>{{username}}</h1>
+  <div class="info">
+    <img class="pfp" id="pfp" src="{{pfp}}" height=250, width=250>
+    <h3>level {{level}} • {{treesPlanted}} trees planted</h3>
+  </div>
+  <div style="visibility: {{vsblty}}" class="pfpSettings">
+    <label for="pfpFile">Profile Picture: </label>
+    <input type="text" onchange="updatePfp()" placeholder="image address here" name="pfpFile" id="pfpFile">
+  </div>
+  <script src="/static/scrpt.js"></script>
+</body>
+
+</html>

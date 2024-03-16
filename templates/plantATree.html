@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TreeAssistant</title>
+  <link href="/static/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <button onclick="redirectDashboard()">Back to Dashboard</button>
+  <h1>Let's find somewhere to plant!</h1>
+  <button class="searchBtn" onclick="getCoordinates()">Search</button>
+  <h4 class="searchHint">Hit the "Search" button to find a favorite tree-planting spot.</h4>
+  <h3 id="addrssDisplay" class="address"></h3>
+  <h5 id="hint" class="address"></h5>
+  <div class="areaList" id="areaList">
+    <div class="holder">
+      <div class="divs">
+        <h2>Places</h2>
+        <h4>Trails and conservation areas</h4>
+        <ul id="trails">
+        </ul>
+        <h4>Forests</h4>
+        <ul id="forests">
+        </ul>
+      </div>
+      <div class="divs">
+        <h2>Tips</h2>
+        <h3>Planting trees can be great for the environment! But there are some important things you should keep in mind before doing so.</h3>
+        <ul>
+          <li><h4>Getting Permission</h4><p>So you found some land to plant your tree. Excellent! But you should always contact the owner of the land and confirm your permissions with them.</p></li>
+          <li><h4>Environment</h4><p>Remember that trees are living beings too, and they need their resources. Strive to find a place with nutritious soil and enough sun among other things.</p></li>
+          <li><h4>Planting the Right Tree</h4><p>Not all trees are created equal. Keep in mind that planting non-native species, especially invasive ones, is not only illegal in some places but also horrible for the environment. Do thourough research on invasive species in your area-- it's great that you want to plant, but if you live in Texas and you're planting a Tree of Heaven, maybe hold off on that.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="/static/scrpt.js"></script>
+  <script src="/static/apiScrpt.js"></script>
+</body>
+
+</html>

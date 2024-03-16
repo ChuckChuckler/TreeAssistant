@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TreeAssistant</title>
+  <link href="/static/dashboard.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id="welcome">Welcome, </h1>
+  <img class="pfp" src="{{pfp}}" height=200, width=200>
+  <h4 id="levelDisplay" class="level">Level </h4>
+  <h4 id="planteds" class="planteds">Trees planted: </h4>
+  <div class="buttons">
+    <button onclick="plantTreeSite()">Plant A Tree</button>
+    <button onclick="myprofile()">Your profile</button>
+  </div>
+
+  <br>
+  <div class="progrsContainer">
+    <div class="progrsBar" id="progsbar"></div>
+  </div>
+  <h2 class="currentLvl" id="currentLvl">Level 2</h2>
+  <h2 class="nextLvl" id="nextLvl">Level 3</h2>
+
+  <div class="leaderboard">
+    <h3>Leaderboard</h3>
+    <ol id="leaderboard">
+      
+    </ol>
+  </div>
+
+  <div class="charities">
+    <h3>Charities</h3>
+    <ul>
+      <li><a href="https://www.edenprojects.org/" target="_blank">Eden Reforestation Project</a></li>
+      <li><a href="https://www.nature.org/en-us/get-involved/how-to-help/plant-a-billion/" target="_blank">Plant a Billion Trees</a></li>
+      <li><a href="https://www.nationalforests.org/tree-planting-programs" target="_blank">National Forest Foundation Reforestation Program</a</li>
+    </ul>
+  </div>
+  <script src="/static/scrpt.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      info({{username|tojson}}, {{treesPlanted}}, {{goal}}, {{level}});
+    setLeaderboard({{leaderboard|tojson}})
+    } 
+  </script>
+</body>
+
+</html>

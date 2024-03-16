@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #8bd994;
+  overflow: hidden;
+}
+
+h1{
+  text-align: center;
+  color: #487a4e;
+  font-size: 100px;
+  position: relative;
+  left: 80px;
+}
+
+button{
+  width: 20%;
+  border-radius: 10px;
+  border-color: #76ad7d;
+  background-color: #76ad7d;
+  color: #406645;
+}
+
+button:hover{
+  background-color: #406645;
+  color: #76ad7d;
+}
+
+.pfp{
+  border-radius: 100%;
+  display: block;
+  position: relative;
+  right: 200px;
+  bottom: 200px;
+  margin: auto;
+}
+
+.info{
+  margin: auto;
+}
+
+h3{
+  position: relative;
+  text-align: center;
+  left: 80px;
+  bottom: 300px;
+}
+
+.pfpSettings{
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+}
+
+@media only screen and (max-width: 700px){
+  .pfp{
+    height: 200px;
+    width: 200px;
+    right: 150px;
+  }
+
+  h1{
+    left: 100px;
+  }
+
+  h3{
+    left: 100px;
+  }
+}
